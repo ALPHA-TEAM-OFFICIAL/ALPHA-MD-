@@ -3271,52 +3271,10 @@ View List Of Messages With ${prefix}listmsg`)
                 reply('Successful Change To Self Usage')
             }
             break
-            case 'ping': case 'botstatus': case 'statusbot': {
-                const used = process.memoryUsage()
-                const cpus = os.cpus().map(cpu => {
-                    cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
-			        return cpu
-                })
-                const cpu = cpus.reduce((last, cpu, _, { length }) => {
-                    last.total += cpu.total
-                    last.speed += cpu.speed / length
-                    last.times.user += cpu.times.user
-                    last.times.nice += cpu.times.nice
-                    last.times.sys += cpu.times.sys
-                    last.times.idle += cpu.times.idle
-                    last.times.irq += cpu.times.irq
-                    return last
-                }, {
-                    speed: 0,
-                    total: 0,
-                    times: {
-			            user: 0,
-			            nice: 0,
-			            sys: 0,
-			            idle: 0,
-			            irq: 0
-                }
-                })
-                let timestamp = speed()
-                let latensi = speed() - timestamp
-                neww = performance.now()
-                oldd = performance.now()
-                respon = `
-Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
+                case 'alive': const _0x3ad86b=_0x1c2d;function _0x1c2d(_0x47c5ab,_0x476e8b){const _0x3b3c85=_0x3b3c();return _0x1c2d=function(_0x1c2d70,_0x1ead52){_0x1c2d70=_0x1c2d70-0x67;let _0x509ae8=_0x3b3c85[_0x1c2d70];return _0x509ae8;},_0x1c2d(_0x47c5ab,_0x476e8b);}function _0x3b3c(){const _0x22dac1=['sendMessage','2720840cbvIgr','133RWYgYh','162oAYgnp','1561704IdRLSr','chat','27513STgNyM','148ShzRmg','834170WAngPe','https://telegra.ph/file/3459972dd41aea38afb1a.jpg','78018pbyLHd','default','ALIVEMSG','88568bBIPCa','628265nwcPgr','\x0a\x0a*👩‍🦰Queen\x20Alexa*\x0a*💫🧚‍♀️Hey\x20There\x20Im\x20Alive\x20Now*\x0a\x0a*◉Version\x20:►\x208.5.1\x20(Public\x20Release)*\x0a*◉Branch\x20\x20:►\x20Awsh*\x0a*◉About\x20:►\x20Amazone\x20Alexa\x20Is\x20a\x20Powerfull\x20Bot\x20For\x20Whatsapp.*\x0a*◯●Github\x20Link\x20:►https://tinyurl.com/yhq3c6ms-\x0a\x0a*💫©Join\x20Our\x20Group*\x0a*▷📑News\x20&\x20Update\x20Report*\x0a_◈https://chat.whatsapp.com/JdNWV3viiGKGINYNrb5oy8*\x0a▷⚡Official\x20Pluggins\x20Group*\x20\x0a\x20◈https://chat.whatsapp.com/JJs2iwfF0VKL3IWrIyr7AT\x0a*🛡️Support\x20Community*\x0a\x20https://t.me/Queen_Alexa_Neotrox_Support💞'];_0x3b3c=function(){return _0x22dac1;};return _0x3b3c();}(function(_0x1d428b,_0x4d03f5){const _0x28286c=_0x1c2d,_0x3805df=_0x1d428b();while(!![]){try{const _0x4e8145=parseInt(_0x28286c(0x6b))/0x1+-parseInt(_0x28286c(0x74))/0x2*(-parseInt(_0x28286c(0x73))/0x3)+parseInt(_0x28286c(0x71))/0x4+parseInt(_0x28286c(0x6e))/0x5+parseInt(_0x28286c(0x67))/0x6*(-parseInt(_0x28286c(0x6f))/0x7)+parseInt(_0x28286c(0x6a))/0x8+parseInt(_0x28286c(0x70))/0x9*(-parseInt(_0x28286c(0x75))/0xa);if(_0x4e8145===_0x4d03f5)break;else _0x3805df['push'](_0x3805df['shift']());}catch(_0x44c9f2){_0x3805df['push'](_0x3805df['shift']());}}}(_0x3b3c,0x7b0d5));{let MSG='';if(Config[_0x3ad86b(0x69)]==_0x3ad86b(0x68))MSG=_0x3ad86b(0x6c);else MSG='\x0a\x0a*🖲️ᴀʟᴘʜᴀ\x20ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ\x20ʙᴏᴛ🖲️*\x0a*ʜᴇʏ\x20ᴛʜᴇʀᴇ\x20ɪ\x27ᴍ\x20ᴏɴʟɪɴᴇ\x20ɴᴏᴡ*\x0a\x0a*◉ᴠᴇʀꜱɪᴏɴ\x20:►\x201.5.1\x20(ᴘʀɪᴠᴀᴛᴇ\x20ʀᴇᴀʟɪꜱᴇ)*\x0a*◉ᴀʙᴏᴜᴛ\x20:►\x20ᴀʟᴘʜᴀ\x20ʙᴏᴛ\x20ɪꜱ\x20ꜱʀɪ\x20ʟᴀɴᴋᴀɴ\x20ʙᴇꜱᴛ\x20ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ\x20ᴡʜᴀᴛꜱᴀᴘᴘ\x20ᴜꜱᴇʀ\x20ʙᴏᴛ*\x0a*◉ᴅᴇᴠᴇʟᴏᴘᴇʀ\x20\x20:►\x20ᴍʀ.ᴛɪᴍᴀ*\x0a\x0aᴛʜᴀɴᴋꜱ\x20ꜰᴏʀ\x20ᴜꜱɪɴɢ\x20ᴀʟᴘʜᴀ\x20ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ\x20ʙᴏᴛ💞\x0a\x0a©ᴀʟᴘʜᴀ\x20ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ\x20ʙᴏᴛ';XeonBotInc[_0x3ad86b(0x6d)](m[_0x3ad86b(0x72)],{'image':{'url':_0x3ad86b(0x76)},'caption':MSG},{'quoted':m});}
 
-💻 Info Server
-RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-
-_NodeJS Memory Usaage_
-${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.length)),' ')}: ${formatp(used[key])}`).join('\n')}
-
-${cpus[0] ? `_Total CPU Usage_
-${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
-_CPU Core(s) Usage (${cpus.length} Core CPU)_
-${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
-                `.trim()
-                reply(respon)
-            }
+		    
+	       
             break
             case 'speedtest': {
             reply('Testing Speed...')
