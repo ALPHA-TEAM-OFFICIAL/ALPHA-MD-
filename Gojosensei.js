@@ -3327,12 +3327,124 @@ reply("Success Changing Menu To "+q)
                     break
                      case 'alive': {
                            	let MSG = ''
-if (Config.ALIVEMSG == 'default') MSG = `\n\n*👩‍🦰Queen Alexa*\n*💫🧚‍♀️Hey There Im Alive Now*\n\n*◉Version :► 8.5.1 (Public Release)*\n*◉Branch  :► Awsh*\n*◉About :► Amazone Alexa Is a Powerfull Bot For Whatsapp.*\n*◯●Github Link :►https://tinyurl.com/yhq3c6ms-\n\n*💫©Join Our Group*\n*▷📑News & Update Report*\n_◈https://chat.whatsapp.com/JdNWV3viiGKGINYNrb5oy8*\n▷⚡Official Pluggins Group* \n ◈https://chat.whatsapp.com/JJs2iwfF0VKL3IWrIyr7AT\n*🛡️Support Community*\n https://t.me/Queen_Alexa_Neotrox_Support💞`
-else MSG = `\n\n*‍Queen👸Alexa*\n*💫🧚‍♀️Hey There Im Alive Now*\n\n*◉Version :► 1.0 (Public Release)*\n*◉Branch  :► Awsh*\n*◉About :► Amazone Alexa Is a Powerfull Bot For Whatsapp.*\n*◯●Github Link :►https://github.com/ChamodKeshan/Queen-Alexa\n\n*💫©Join Our Group*\n*▷📑News & Update Report*\n_◈https://chat.whatsapp.com/JdNWV3viiGKGINYNrb5oy8*\n▷⚡Official Pluggins Group* \n ◈https://chat.whatsapp.com/JJs2iwfF0VKL3IWrIyr7AT\n*🛡️Support Community*\n https://t.me/Queen_Alexa_Neotrox_Support💞`
-                GojoMdNx.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/e8f3e419b3dafe9fe8153.jpg' }, caption: MSG }, { quoted: m })
+if (Config.ALIVEMSG == 'default') MSG = `*‍🎭ᴀʟᴘʜᴀ ᴍᴅ ʙᴏᴛ🎭*\n*ʜᴇʏ ᴛʜᴇʀᴇ ɪᴍ ᴏɴʟɪɴᴇ ɴᴏᴡ*\n\n*◉ᴠᴇʀsɪᴏɴ :► 2.0 (ᴄᴏᴍᴍɪɴɢ sᴏᴏɴ)*\n*◉ᴅᴇᴠᴇʟᴏᴘᴇʀ :► ᴀᴄʜɪ ғʀᴇɴᴀɴᴅᴏ*\n*◯●Github Link :►https://github.com/\n\nᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴀʟᴘʜᴀ ᴍᴅ ᴠᴇʀsɪᴏɴ💞`
+else MSG = `*‍🎭ᴀʟᴘʜᴀ ᴍᴅ ʙᴏᴛ🎭*\n*ʜᴇʏ ᴛʜᴇʀᴇ ɪᴍ ᴏɴʟɪɴᴇ ɴᴏᴡ*\n\n*◉ᴠᴇʀsɪᴏɴ :► 2.0 (ᴄᴏᴍᴍɪɴɢ sᴏᴏɴ)*\n*◉ᴅᴇᴠᴇʟᴏᴘᴇʀ :► ᴀᴄʜɪ ғʀᴇɴᴀɴᴅᴏ*\n*◯●Github Link :►https://github.com/\n\nᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴀʟᴘʜᴀ ᴍᴅ ᴠᴇʀsɪᴏɴ💞`
+                GojoMdNx.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/abbef141f0a455add4f28.jpg' }, caption: MSG }, { quoted: m })
          }
 break
-            case 'alpha': {
+		case 'systeminfo': {
+                GojoMdNx.sendMessage(from, { text: `⚕️ᴀʟᴘʜᴀ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ sʏsᴛᴇᴍ ɪɴғᴏ⚕️\n\n*📍sᴘᴇᴇᴅ:* ${latensie.toFixed(4)} miliseconds\n*⏱️ʙᴏᴛ ʀᴜɴɴɪɴɢ ᴛɪᴍᴇ:* ${runtime(process.uptime())}\n*💻ᴘʟᴀᴛғᴏʀᴍ:* ${os.platform()}` }, { quoted: m})
+        }
+		break
+		case 'wallpaper': {
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                listMessage :{
+                    title: `ᴛʜɪs ɪs ᴀʟᴘʜᴀ ʙᴏᴛ ᴡᴀʟʟᴘᴀᴘᴇʀ`,
+                    description: `ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ʏᴏᴜ ʟɪᴋᴇ ᴡᴀʟʟᴘᴀᴘᴇʀ\n\n`,
+                    buttonText: "ᴡᴀʟʟᴘᴀᴘᴇʀ",
+                    footerText: `©ᴀʟᴘʜᴀ ᴍᴅ ᴠᴇʀsɪᴏɴ ʙᴏᴛ`,
+                    listType: "SINGLE_SELECT",
+                    sections: [{
+								"title": "⁺+15 ᴡᴀʟʟᴘᴀᴘᴇʀs",
+								"rows": [
+									{
+										"title": "ʙʟᴇᴀᴄʜ ᴀɴɪᴍᴇ ᴡᴀʟʟᴘᴀᴘᴇʀ",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+									}
+								]
+							},
+							{
+								"title": "sᴇʟᴇᴄᴛ ʏᴏᴜʀ ᴡᴀʟʟᴘᴀᴘᴇʀ",
+								"rows": [
+									{
+										"title": "All Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+									},
+									{
+										"title": "Owner Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+										},
+									{
+										"title": "Group Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+										},
+									{
+										"title": "Rpg Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+									},
+									{
+										"title": "Download Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+									},
+									{
+										"title": "Search Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+									},
+									{
+											"title": "Random Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+										},
+										{
+											"title": "Random Anime Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+										},
+										{
+											"title": "Fun Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+										},
+										{
+											"title": "Convert Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+										},
+										{
+											"title": "Database Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+										},
+										{
+											"title": "Voice Changer Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+										},
+										{
+											"title": "TXT-to-IMG Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+										},
+										{
+											"title": "Horoscope Menu",
+										"description": "",
+										"rowId": `${prefix}wallpaperimg`
+										}
+								]
+							},
+							
+									{
+										"title": "sʏsᴛᴇᴍ ɪɴғᴏ",
+										"description": "",
+										"rowId": `${prefix}systeminfo`
+									}
+								
+							}
+						],
+          listType: 1
+                }
+            }), {})
+            GojoMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+		break
+            case 'nnnn': {
             	timestampe = speed();
 latensie = speed() - timestampe
                 anu = ``
