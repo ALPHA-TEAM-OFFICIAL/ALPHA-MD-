@@ -3385,10 +3385,6 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 GojoMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
-	case 'ping': {
-		 await message.sendReply('*ʀᴇsᴘᴏɴsᴇ ɪɴ ' + (end - start) + ' _ᴍs_*')
-	}
-		break
             case 'listxx': case 'menuxx': {
             	timestampe = speed();
 latensie = speed() - timestampe
