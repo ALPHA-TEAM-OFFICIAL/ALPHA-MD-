@@ -3336,6 +3336,82 @@ break
                 GojoMdNx.sendMessage(from, { text: `⚕️ᴀʟᴘʜᴀ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ sʏsᴛᴇᴍ ɪɴғᴏ⚕️\n\n*📍sᴘᴇᴇᴅ:* ${latensie.toFixed(4)} miliseconds\n*⏱️ʙᴏᴛ ʀᴜɴɴɪɴɢ ᴛɪᴍᴇ:* ${runtime(process.uptime())}\n*💻ᴘʟᴀᴛғᴏʀᴍ:* ${os.platform()}` }, { quoted: m})
         }
 		break
+	case 'menu': {
+		                GojoMdNx.sendMessage(from, { text: `*⛔ᴡᴀʀɴɪɴɢ*\n*ᴛʏᴘᴇ .ᴀʟᴘʜᴀ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ᴀʟᴘʜᴀ ʙᴏᴛ ᴍᴇɴᴜ*` }, { quoted: m})
+	}
+		break
+		case 'alpha': {
+            	XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/722db922be8aa3247a7d7.jpg' }, caption: `
+*╭─「 ᴀʟᴘʜᴀ ᴍᴅ ᴍᴇɴᴜ」*
+ │
+ ├─────────••‣
+ *│🌼ʜᴇʟʟᴏ,* ɪ'ᴍ ᴀʟᴘʜᴀ ᴍᴅ ʙᴏᴛ
+ *│👤ᴅᴇᴠᴇʟᴏᴘᴇʀ:* ᴀᴄʜɪ ғʀᴇɴᴀɴᴅᴏ
+ *│💎ᴘʟᴀᴛғᴏʀᴍ:* ʟɪɴᴜx
+ *│🛡️ᴡᴏʀᴋɪɴɢ ᴀs:* ᴘᴜʙʟɪᴄ
+  │ 
+  │  ©️ᴀʟᴘʜᴀ ᴍᴅ ʙᴏᴛ
+ ╰──────────••‣
+ ╭──────────••‣
+*│🛡️ᴀʟᴘʜᴀ ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅs*
+ │   ───────
+ │
+ │► ${prefix}ᴀʟɪᴠᴇ [ᴄʜᴇᴄᴋ ʙᴏᴛ sᴛᴀᴛᴜs]
+ │► ${prefix}ʙᴏᴛ [ᴄʜᴀᴛ ᴡɪᴛʜ ʙᴏᴛ]
+ │► ${prefix}ᴀᴅᴍɪɴ [ᴀʟᴘʜᴀ ᴏᴡɴᴇʀ ᴄᴏᴍᴍᴀɴᴅs]
+ │► ${prefix}sᴇᴛᴛɪɴɢs [ᴄʜᴀɴɢᴇ ʙᴏᴛ ʜᴇʀᴏᴋᴜ]
+ │► ${prefix}ᴜᴘᴅᴀᴛᴇ [ᴄʜᴇᴄᴋ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs]
+ │► ${prefix}ᴜᴘᴅᴀᴛᴇ ɴᴏᴡ [ɢᴇᴛ ᴜᴘᴅᴀᴛᴇs]
+ │► ${prefix}ʀᴇsᴛᴀʀᴛ [ʀᴇsᴛᴀʀᴛ ʙᴏᴛ] 
+ ╰────────────••‣
+ ╭────────────••‣
+ *│💰ᴅᴏᴡɴʟᴏᴀᴅ ᴄᴏᴍᴍᴀɴᴅs*
+ │      ────────
+ │► ${prefix}ᴠɪᴅᴇᴏ [ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏs]
+ │► ${prefix}sᴏɴɢ [ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜᴛᴜʙᴇ sᴏɴɢs]
+ │► ${prefix}ɪᴍɢ
+ │► ${prefix}ғʙ 
+ │► ${prefix}ᴛɪᴋᴛᴏᴋ
+ │► ${prefix}ᴍᴇᴅɪᴀғɪʀᴇ
+ ╰────────────••‣
+ ╭────────────••‣
+ *│🛸ɢʀᴏᴜᴘ ᴄᴏᴍᴍᴀɴᴅs*
+ │  ─────────
+ │► ${prefix}ʀᴇɴᴀᴍᴇ [ᴄʜᴀɴɢᴇ ɢʀᴏᴜᴘ ɴᴀᴍᴇ]
+ │► ${prefix}ᴛᴀɢᴀᴅᴍɪɴ 
+ │► ${prefix}ᴄʟᴇᴀʀ
+ │► ${prefix}ʀᴇᴘᴏʀᴛ
+ │► ${prefix}ᴛᴀɢᴀʟʟ  
+ │► ${prefix}ᴀᴅᴅ 
+ │► ${prefix}ᴘʀᴏᴍᴏᴛᴇ
+ │► ${prefix}ᴅᴇᴍᴏᴛᴇ 
+ │► ${prefix}ɪɴᴠɪᴛᴇ [ɢᴇᴛ ɢʀᴏᴜᴘ ʟɪɴᴋ] 
+ │► ${prefix}ᴋɪᴄᴋᴍᴇ
+ ╰───────────••‣
+ ╭───────────••‣
+ *│🎭ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅs*
+ │      ───────
+ │► ${prefix}ᴡᴀʟʟᴘᴀᴘᴇʀ [+15 ᴡᴀʟʟᴘᴀᴘᴇʀs]
+ │► ${prefix}ғғᴘᴀᴄᴋ [ᴄʀᴇᴀᴛᴇ ғғ ʟᴏɢᴏ ɪɴ ʏᴏᴜʀ ɴᴀᴍᴇ]
+ │► ${prefix}ᴛᴇxᴛɪᴍɢ [ᴄʀᴇᴀᴛᴇ ʟᴏɢᴏ ɪɴ ʏᴏᴜʀ ɴᴀᴍᴇ]
+ │► ${prefix}sᴛɪᴄᴋᴇʀᴘᴀᴄᴋ [ɢᴇᴛ sᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋ]
+ ╰───────────••‣
+ ╭───────────••‣
+ *│⚙️ʙᴏᴛ sᴇᴛᴛɪɴɢs*
+ │    ───────
+ │► ᴛʏᴘᴇ sᴇᴛᴛɪɴɢs ғᴏʀ ɢᴇᴛ ʙᴏᴛ sᴇᴛᴛɪɴɢ ᴍᴇɴᴜ
+ │    
+ │   ᴛʜᴀɴᴋ ғᴏʀ ᴜsɪɴɢ ᴀʟᴘʜᴀ ᴍᴅ ʙᴏᴛ💕  
+ │
+ ╰───────────••‣`
+						const buttons = [
+         {buttonId: 'id1', buttonText: {displayText: 'Button 1'}, type: 1},
+         {buttonId: 'id2', buttonText: {displayText: 'Button 2'}, type: 1},
+         {buttonId: 'id3', buttonText: {displayText: 'Button 3'}, type: 1}
+]
+}, { quoted: m })
+           }
+		break
 		case 'wallpaper': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
